@@ -1,0 +1,25 @@
+<header>
+  <nav class="top-nav" style="padding-left: 300px">
+    <div class="container">
+      <div class="nav-wrapper"><a class="page-title">CHAT Application</a></div>
+    </div>
+  </nav>
+  <!--<sd-navbar></sd-navbar>-->
+  <div>
+    <ul class="side-nav fixed" style="transform: translateX(0px);">
+      <li class="active">
+        <a [routerLink]="['/chat']" [routerLinkActive]="['router-link-active']"
+           [routerLinkActiveOptions]="{exact:true}" class="">CHAT</a>
+      </li>
+
+    </ul>
+  </div>
+
+</header>
+<main>
+  <div class="container">
+    <router-outlet></router-outlet>
+    </div>
+</main>
+
+

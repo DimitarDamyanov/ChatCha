@@ -1,0 +1,15 @@
+<div class="row">
+  <div class="col s12 m12">
+    <div class="card blue-grey darken-1">
+      <div class="card-content white-text">
+        <span class="card-title">Conversation</span>
+        <ct-auth *ngIf="!isUserLogged"></ct-auth>
+        <ct-cnv *ngIf="isUserLogged"></ct-cnv>
+        <div class="card-action" *ngIf="isUserLogged">
+          <ct-send-msg></ct-send-msg>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+

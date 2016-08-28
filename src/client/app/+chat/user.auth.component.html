@@ -1,0 +1,14 @@
+<div class="row">
+  <div class="input-field col s7">
+    <i class="mdi-action-lock-outline prefix"></i>
+    <input  [(ngModel)] = "username"  id="icon_password" type="text" class="validate" (keypress)="keypressHandler($event)">
+    <label for="icon_password">Name</label>
+  </div>
+  <div class="input-field col s4">
+    <div class="input-field col s12">
+      <button class="btn cyan waves-effect waves-light" (click) = "login()"><i
+        class="mdi-action-lock-open"></i> Enter
+      </button>
+    </div>
+  </div>
+</div>
